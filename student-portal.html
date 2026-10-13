@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Project 1</title>
+        <style>
+            nav 
+            {
+                
+                
+            }
+            body  {
+                background-color: yellow;
+            }
+            h1 {
+                color: violet;
+            }
+            h2 {
+                color: red;
+            }
+            #studnentprofile 
+            {
+               color:brown ;
+               font-weight: bold;
+            }
+            .information {
+                color: red;
+                font-weight: bold;
+            }
+            #myskills {
+                color:violet;
+                font-weight: bold;
+            }
+                .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #007bff; 
+      color: white;                     
+      font-size: 14px;
+    }
+
+        </style>
+        </head>
+        <body>
+            <header>
+            <h1>STUDENT PORTAL</h1>
+            <nav><!--link will not move to other pages-->
+                <a href="student-portal.html">Home</a>
+                <a href="#studnentprofile">Profile</a>
+                <a href="#myskills">Courses</a>
+                <a href="#registration">Register</a>
+            </nav>
+            </header>
+            <main>
+                <section id="studnentprofile">
+                    <h2>Student Profile</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td id="myname">Navneet Singh<span class="badge">Done</span> </td>
+                        </tr>
+                        <tr>
+                            <td>STUDENT ID</td>
+                            <td>26BCS10539</td>
+                        </tr>
+                        <tr>
+                            <td>Program</td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>1st Year</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>navneet.26bcs10539@sst.scaler.com</td>
+                        </tr>
+                        </tbody>
+                        
+                    </table>
+
+                </section>
+                <section id="myskills">
+                    <h2>My Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Git</li> 
+                    </ul>
+                </section>
+                <section id="schedule">
+                    <h2>Weekly Schedule</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>9:00 AM</th>
+                                <th>11:00 AM</th>
+                                <th>2:00 PM</th>
+                            </tr>
+                            </thead>\
+                            <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>HTML</td>
+                                <td>Mathematics</td>
+                                <td>DSA</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>CSS</td>
+                                <td>DBMS</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>JavaScript</td>
+                                <td>DSA</td>
+                                <td>Mathematics</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>DBMS</td>
+                                <td>HTML</td>
+                                <td>Project</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>DSA</td>
+                                <td>CSS</td>
+                                <td>Workshop</td>
+                            </tr>
+                            </tbody>
+            
+                    </table>
+                </section>
+                <section id="registration">
+                    <h2>Course Registration</h2>
+                    <fieldset>
+                        <legend>Student Information</legend>
+                        <form>
+                            <label for="name" class="information">Name</label>
+                            <input type="text" id="name" name="name"  required>
+                            <br>
+                            <label for="email" class="information">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <br>
+                            <label for="studentid" class="information">Student ID</label>
+                            <input type="text" id="studentid" name="studentid" required>
+                            <br>
+                            <label for="course" class="information">Course Selection</label>
+                            <select id="course" name="course"  required>
+                                <option value="javascript">JavaScript</option>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="python">Python</option>
+                                <option value="select course" selected>Select Course</option>
+                            </select>
+                            <br>
+                            <label for="learningmode" class="information">Preferred Learning Mode</label>
+                            <br>
+                            <label for="online" class="information">Online</label>
+                            <input type="radio" id="online" name="learningmode" >
+                            <br>
+                            <label for="offline" class="information">Offline</label>
+                            <input  type="radio" id="offline" name="learningmode" >
+                            <br>
+                            <label for="skillknown" class="information">Skill You Already know</label>
+                            <br>
+                            <label for="html" class="information">HTML</label>
+                            <input type="checkbox" id="html" name="skillknown" >
+                            <br>
+                            <label for="css" class="information">CSS</label>
+                            <input type="checkbox" id="css" name="skillknown" >
+                            <br>
+                            <label for="javascript" class="information">JavaScript</label>
+                            <input type="checkbox" id="javascript" name="skillknown" >
+                            <label for="python" class="information">Python</label>
+                            <input type="checkbox" id="python" name="skillknown">
+                            <br>
+                            <button type="submit">Submit</button>
+                            <br>
+                            <button type="reset">Reset</button>
+                        </form>
+                    </fieldset>
+
+                </section>
+            </main>
+            <footer>
+                <h2>Contact Information</h2>
+<nav>
+    <a href="tel:+918077422328">+91 8077422328</a>
+    <br>
+    <a href="mailto:navneetsingh143777@gmail.com">navneetsingh143777@gmail.com</a>
+
+</nav>
+            </footer>
+        </body>
+</html>
